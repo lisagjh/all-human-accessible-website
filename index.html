@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Link to boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link to JavaScript script -->
+    <script src="/scripts/script.js" defer></script>
+
+    <title>Mijn OBA - Diensten en Producten</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="header-left">
+            <div class="user-profile">
+                <img src="/image/fotolisa.jpg" alt="profielfoto van gebruiker" width="50px" height="50px">
+            </div>
+
+            <!-- Gebruikte tutorial: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+            <nav class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+
+                    <a href="#">
+                        <i class='bx bx-home icon'></i>
+                        <p class="text nav-text">Welkom</p>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bx-user icon'></i>
+                        <p class="text nav-text">Overzicht Abonnement</p>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bx-list-ul icon'></i>
+                        <p class="text nav-text">Leeslijst</p>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bx-bar-chart-alt-2 icon'></i>
+                        <p class="text nav-text">Uitleningen en Verlengen</p>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bx-bell icon'></i>
+                        <p class="text nav-text">Uitleengeschiedenis</p>
+                    </a>
+
+
+                    <a href="#">
+                        <i class='bx bx-bookmark icon'></i>
+                        <p class="text nav-text">Diensten en Producten</p>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt icon'></i>
+                        <p class="text nav-text">Betaalgeschiedenis</p>
+                    </a>
+
+
+                    <a href="#">
+                        <i class='bx bx-heart icon'></i>
+                        <p class="text nav-text">Reserveringen</p>
+                    </a>
+                </div>
+
+            </nav>
+            <div class="searchbar">
+                <i class='bx bx-search icon'></i>
+            </div>
+        </div>
+
+        <div class="oba-logo">
+            <img src="image/oba.png" alt="Logo van OBA">
+        </div>
+
+        <div class="bottom-content">
+            <ul>
+                <li>
+                    <a href="https://lisagjh.github.io/the-client-website/404.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Uitloggen</span>
+                    </a>
+                </li>
+                <!-- <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li> -->
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="filter">
+            <button>Filters</button>
+            <button>Diensten</button>
+            <button>Producten</button>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
