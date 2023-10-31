@@ -271,7 +271,7 @@ h3 {
 
 .item-list {
   display: flex;
-  max-width: 950px;
+
   width: 75w;
   scroll-behavior: smooth;
   overflow: auto;
