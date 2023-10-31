@@ -157,7 +157,6 @@ header a:visited {
   display: block;
 }
 
-
 /* MAIN */
 
 main {
@@ -170,15 +169,24 @@ main ul {
   list-style: none;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: AvenirMedium;
   color: var(--text-color);
 }
 
-h2 {
-  color: var(--text-color);
+h1 {
+  font-size: 3rem;
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
 
 /* icons */
 
@@ -220,14 +228,16 @@ h2 {
 
 .container {
   margin: 2rem 0 0 0;
+  background-color: var(--sidebar-color);
+  padding: 0.5rem;
+  margin: 1rem 0 0 0;
+  border-radius: 6px;
 }
 
 .carousel-view {
   display: flex;
   flex-direction: row;
-  background-color: var(--sidebar-color);
   border-radius: 6px;
-  padding: 0.25rem;
 }
 
 .carousel-view button {
@@ -248,11 +258,10 @@ h2 {
   color: var(--black);
 }
 
-
 .item-list img {
   width: 150px;
   height: 150px;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 .item {
@@ -276,13 +285,31 @@ h2 {
   display: none;
 }
 
+.item-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
+.item-container h3 {
+  margin-top: -0.75rem;
+}
+
+.item-container a {
+  text-decoration: none;
+}
+
+.item-container a:visited {
+  text-decoration: none;
+}
 
 /* FOOTER */
 
 footer {
-  font-size: 0.85rem;
+  position: absolute;
+  bottom: 0;
   width: 100vw;
   background-color: var(--primary-color-light);
+  font-size: 0.85rem;
   padding: 0.35rem;
 }
