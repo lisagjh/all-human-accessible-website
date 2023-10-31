@@ -20,15 +20,14 @@
 
 <body>
     <header>
-
-        <div class="header-left">
-            <div class="user-profile">
-                <img src="/image/fotolisa.jpg" alt="profielfoto van gebruiker" width="50px" height="50px">
-            </div>
-
-            <!-- Gebruikte tutorial: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+        <!-- Gebruikte tutorial: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+        <div class="menu">
             <nav class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <!-- <button onclick="myFunction()" class="dropbtn">            <img src="/image/AmberFoto.jpeg" class="user-photo" alt="Profielfoto" width="40px" height="40px"> -->
+                </button>
+
+
                 <div id="myDropdown" class="dropdown-content">
 
                     <a href="#">
@@ -72,53 +71,120 @@
                         <i class='bx bx-heart icon'></i>
                         <p class="text nav-text">Reserveringen</p>
                     </a>
-                </div>
 
-            </nav>
-            <div class="searchbar">
-                <i class='bx bx-search icon'></i>
-            </div>
-        </div>
-
-        <div class="oba-logo">
-            <img src="image/oba.png" alt="Logo van OBA">
-        </div>
-
-        <div class="bottom-content">
-            <ul>
-                <li>
                     <a href="https://lisagjh.github.io/the-client-website/404.html">
                         <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Uitloggen</span>
                     </a>
-                </li>
-                <!-- <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
 
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li> -->
-            </ul>
+                </div>
 
+            </nav>
         </div>
+
+        <img src="image/oba.png" class="oba-logo" alt="Logo van OBA">
+
+        <i class='bx bx-user user-photo'></i>
+
     </header>
 
     <main>
-        <div class="filter">
-            <button>Filters</button>
-            <button>Diensten</button>
-            <button>Producten</button>
+        <!-- overzicht diensten OBA  A-Z: 
+            https://www.oba.nl/collectie/digitale-bronnen/a-z.html  -->
+        <h1>OBA Extra's</h1>
+        <div class="buttons">
+            <button class="filterbtn"><i class='bx bx-filter'></i>Filters</button>
+            <button class="filterbtn">Diensten</button>
+            <button class="filterbtn">Producten</button>
         </div>
+
+        <div class="list-container">
+
+            <!-- CAROUSEL -->
+            <!-- Tutorial: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-carousel-using-html-css-js-7ab0561b39b3 -->
+            <div class="container">
+                <h2>Diensten</h2>
+                <div class="carousel-view">
+                    <!-- previous button left -->
+                    <button id="prev-btn" class="prev-btn"><i class='bx bxs-left-arrow'></i></button>
+
+                    <div id="item-list" class="item-list">
+                        <img id="item" class="item" src="/assets/2b-logo.jpeg">
+                        <img id="item" class="item" src="/assets/adam-logo.jpeg">
+                        <img id="item" class="item" src="/assets/artindex-logo.jpeg">
+                        <img id="item" class="item" src="/assets/avm-logo.jpeg">
+                        <img id="item" class="item" src="/assets/bereslim-logo.jpeg">
+                        <img id="item" class="item" src="/assets/rekenen-logo.jpeg">
+                        <img id="item" class="item" src="/assets/spellen-logo.jpeg">
+                        <img id="item" class="item" src="/assets/bntl-logo.jpeg">
+                        <img id="item" class="item" src="/assets/bwn-logo.jpeg">
+                        <img id="item" class="item" src="/assets/centraal-logo.jpeg">
+                        <img id="item" class="item" src="/assets/chemisch-logo.jpeg">
+                        <img id="item" class="item" src="/assets/dbng-logo.png">
+
+                    </div>
+
+                    <!-- next button right -->
+                    <button id="next-btn" class="next-btn"><i class='bx bxs-right-arrow'></i></button>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Producten</h2>
+                <div class="carousel-view">
+                    <!-- previous button left -->
+                    <button id="prev-btn" class="prev-btn"><i class='bx bxs-left-arrow'></i></button>
+
+                    <div id="item-list" class="item-list">
+                        <img id="item" class="item" src="/assets/telescoop.jpeg">
+                        <img id="item" class="item" src="/assets/telescoop.jpeg">
+                        <img id="item" class="item" src="/assets/telescoop.jpeg">
+                        <img id="item" class="item" src="/assets/telescoop.jpeg">
+                        <img id="item" class="item" src="/assets/telescoop.jpeg">
+                        <img id="item" class="item" src="/assets/telescoop.jpeg">
+                        <img id="item" class="item" src="/assets/telescoop.jpeg">
+                        <img id="item" class="item" src="/assets/telescoop.jpeg">
+                    </div>
+
+                    <!-- next button right -->
+                    <button id="next-btn" class="next-btn"><i class='bx bxs-right-arrow'></i></button>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Activiteiten</h2>
+                <div class="carousel-view">
+                    <!-- previous button left -->
+                    <button id="prev-btn" class="prev-btn"><i class='bx bxs-left-arrow'></i></button>
+
+                    <div id="item-list" class="item-list">
+                        <img id="item" class="item" src="/assets/activities/photo1.avif">
+                        <img id="item" class="item" src="/assets/activities/photo2.avif">
+                        <img id="item" class="item" src="/assets/activities/photo3.avif">
+                        <img id="item" class="item" src="/assets/activities/photo4.avif">
+                        <img id="item" class="item" src="/assets/activities/photo5.avif">
+
+                    </div>
+
+                    <!-- next button right -->
+                    <button id="next-btn" class="next-btn"><i class='bx bxs-right-arrow'></i></button>
+                </div>
+            </div>
+
+
+
+
     </main>
 
-    <footer>
+    <!-- <footer>
+        <ul>
+            <li>Contactgegevens</li>
+            <li>Adres</li>
+            <li>Meer info</li>
 
-    </footer>
+        </ul>
+    </footer> -->
+
 </body>
 
 </html>
