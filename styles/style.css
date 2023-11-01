@@ -172,6 +172,7 @@ main ul {
 h1,
 h2,
 h3 {
+  font-family: 'AvenirMedium', Arial;
   color: var(--text-color);
 }
 
