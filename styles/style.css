@@ -37,8 +37,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: var(--body-color);
-  font-family: 'AvenirMedium', Arial;
+  font-family: "AvenirMedium", Arial;
 }
 
 /* header */
@@ -50,6 +53,18 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem 0 2rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header p {
+  font-size: 0.7rem;
+  padding: 0;
+  margin: 0;
 }
 
 .user-photo {
@@ -172,16 +187,18 @@ main ul {
 h1,
 h2,
 h3 {
-  font-family: 'AvenirMedium', Arial;
+  font-family: "AvenirMedium", Arial;
   color: var(--text-color);
 }
 
 h1 {
   font-size: 3rem;
+  padding-left: 0.5rem;
 }
 
 h2 {
   font-size: 1.75rem;
+  padding-left: 0.5rem;
 }
 
 h3 {
@@ -196,6 +213,10 @@ h3 {
 }
 
 /* FILTER BUTTONS */
+
+.buttons {
+  padding-left: 0.5rem;
+}
 
 .filterbtn {
   color: var(--primary-color-light);
@@ -227,23 +248,22 @@ h3 {
 
 .container {
   margin: 2rem 0 0 0;
-  background-color: var(--sidebar-color);
   padding: 0.5rem;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 3rem 0;
   border-radius: 6px;
 }
 
 .carousel-view {
   display: flex;
   flex-direction: row;
-  background-color: var(--primary-color-light);
+  background-color: var(--sidebar-color);
   border-radius: 6px;
 }
 
 .carousel-view button {
   color: var(--primary-color);
   background-color: transparent;
-  height: 1.5rem;
+  height: 2rem;
   align-self: center;
   font-size: 1.5rem;
   border: none;
@@ -271,11 +291,9 @@ h3 {
 
 .item-list {
   display: flex;
-
-  width: 75w;
   scroll-behavior: smooth;
   overflow: auto;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory; /* The scroll container snaps to positions in its horizontal axis only */
   -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
@@ -305,11 +323,10 @@ h3 {
 
 /* FOOTER */
 
-footer {
-  position: absolute;
-  bottom: 0;
+/* footer {
   width: 100vw;
+  min-height: 50px;
   background-color: var(--primary-color-light);
   font-size: 0.85rem;
   padding: 0.35rem;
-}
+} */
