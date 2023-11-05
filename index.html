@@ -23,7 +23,7 @@
         <!-- Gebruikte tutorial: https://www.w3schools.com/howto/howto_js_dropdown.asp -->
         <div class="menu">
             <nav class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <button onclick="myFunction()" class="dropbtn" aria-labelledby="menu">Menu</button>
                 <!-- <button onclick="myFunction()" class="dropbtn">            <img src="/image/AmberFoto.jpeg" class="user-photo" alt="Profielfoto" width="40px" height="40px"> -->
                 </button>
 
@@ -95,12 +95,12 @@
         <!-- overzicht diensten OBA  A-Z: 
             https://www.oba.nl/collectie/digitale-bronnen/a-z.html  -->
         <h1>OBA Extra's</h1>
+        
         <div class="buttons">
             <button class="filterbtn"><i class='bx bx-filter'></i>Filters</button>
             <button class="filterbtn">Diensten</button>
             <button class="filterbtn">Producten</button>
             <button class="filterbtn">Activiteiten</button>
-
         </div>
 
         <div class="list-container">
@@ -112,7 +112,7 @@
                 <h2>Diensten</h2>
                 <div class="carousel-view">
                     <!-- previous button left -->
-                    <button id="prev-btn1" class="prev-btn"><i class='bx bxs-left-arrow'></i></button>
+                    <button id="prev-btn1" class="prev-btn" aria-label="previous"><i class='bx bxs-left-arrow'></i></button>
 
                     <div id="item-list1" class="item-list">
                         <div class="item-container">
@@ -186,7 +186,8 @@
 
                         <div class="item-container">
                             <a href="https://www.chemischefeitelijkheden.nl/">
-                                <img id="item" class="item" src="./assets/chemisch-logo.jpeg" alt="Chemische Feitelijkheden Logo">
+                                <img id="item" class="item" src="./assets/chemisch-logo.jpeg"
+                                    alt="Chemische Feitelijkheden Logo">
                                 <h3>Chemische Feitelijkheden</h3>
                             </a>
                         </div>
@@ -202,7 +203,7 @@
                     </div>
 
                     <!-- next button right -->
-                    <button id="next-btn1" class="next-btn"><i class='bx bxs-right-arrow'></i></button>
+                    <button id="next-btn1" class="next-btn" aria-label="next"><i class='bx bxs-right-arrow'></i></button>
                 </div>
             </div>
 
@@ -210,7 +211,7 @@
                 <h2>Producten</h2>
                 <div class="carousel-view">
                     <!-- previous button left -->
-                    <button id="prev-btn2" class="prev-btn2"><i class='bx bxs-left-arrow'></i></button>
+                    <button id="prev-btn2" class="prev-btn2" aria-label="previous"><i class='bx bxs-left-arrow'></i></button>
 
                     <div id="item-list2" class="item-list">
                         <div class="item-container">
@@ -265,7 +266,7 @@
                     </div>
 
                     <!-- next button right -->
-                    <button id="next-btn2" class="next-btn"><i class='bx bxs-right-arrow'></i></button>
+                    <button id="next-btn2" class="next-btn" aria-label="next"><i class='bx bxs-right-arrow'></i></button>
                 </div>
             </div>
 
@@ -273,7 +274,7 @@
                 <h2>Activiteiten</h2>
                 <div class="carousel-view">
                     <!-- previous button left -->
-                    <button id="prev-btn3" class="prev-btn"><i class='bx bxs-left-arrow'></i></button>
+                    <button id="prev-btn3" class="prev-btn" aria-label="previous"><i class='bx bxs-left-arrow'></i></button>
 
                     <div id="item-list3" class="item-list">
                         <div class="item-container">
@@ -302,16 +303,18 @@
 
                         <div class="item-container">
                             <a href="#">
-                                <img id="item" class="item" src="./assets/activities/oefenuur.jpeg" alt="Foto Oefen Uur">
+                                <img id="item" class="item" src="./assets/activities/oefenuur.jpeg"
+                                    alt="Foto Oefen Uur">
                                 <h3>Oefen Uur</h3>
                             </a>
                         </div>
                     </div>
 
                     <!-- next button right -->
-                    <button id="next-btn3" class="next-btn"><i class='bx bxs-right-arrow'></i></button>
+                    <button id="next-btn3" class="next-btn" aria-label="next"><i class='bx bxs-right-arrow'></i></button>
                 </div>
             </div>
+        </div>
 
 
 
